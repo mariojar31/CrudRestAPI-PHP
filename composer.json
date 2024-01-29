@@ -1,0 +1,28 @@
+{
+    "name": "mariojar31/rest-api-crud",
+    "description": "A Slim framework Rest API that allows us to make queries to an SQL database.",
+    "keywords": [
+        "rest api",
+        "php",
+        "slim 3 vercel",
+        "rest"
+    ],
+    "type": "project",
+    "homepage": "https://github.com/mariojar31/RestAPI-CRUD",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mario Acendra",
+            "email": "mariojoacre31@gmail.com",
+            "homepage": "https://github.com/mariojar31"
+        }
+    ],
+
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.0",
+        "slim/twig-view": "^3.0",
+        "doctrine/dbal": "^3.1",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
