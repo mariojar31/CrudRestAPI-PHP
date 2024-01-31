@@ -33,20 +33,17 @@ class insertController{
     
         // Se realiza la inserción en la base de datos
         
-        $sql="INSERT INTO news (id_new, headline, lead_new,content,image_url, photo_src, id_author, id_source, id_category, type_new, url_new, relevance, ext) VALUES (NULL, :headline, :lead, :contentnew, :image_url, :photo_src, :id_author, :id_source, :id_category, :newType, :url_new, :relevance, :ext)";
+        $sql="INSERT INTO news (id_new, headline, lead_new,content,image_url, id_author, id_source, id_category, type_new, url_new) VALUES (NULL, :headline, :lead, :contentnew, :image_url, :id_author, :id_source, :id_category, :newType, :url_new)";
         $stmt= $this->db->prepare($sql);
         $stmt->bindParam(':headline', $headline);
         $stmt->bindParam(':lead', $lead);
         $stmt->bindParam(':contentnew', $content);
         $stmt->bindParam(':image_url', $image_url);
-        $stmt->bindParam(':photo_src', $photo_src);
         $stmt->bindParam(':id_author', $id_author);
         $stmt->bindParam(':id_source', $id_source);
         $stmt->bindParam(':id_category', $id_category);
         $stmt->bindParam(':newType', $type);
         $stmt->bindParam(':url_new', $url_new);
-        $stmt->bindParam(':relevance', $relevance);
-        $stmt->bindParam(':ext', $ext);
         
 
 

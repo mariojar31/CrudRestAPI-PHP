@@ -38,6 +38,7 @@
     <li>...</li>
 </ul>
 
-<p><?= date('Y') ?> &copy; Mario Acendra -<a href="https://github.com/mariojar31">MyRepository</a></p>
+<p>2024 &copy; Mario Acendra -<a href="https://github.com/mariojar31">MyRepository</a></p>
+
 </body>
 </html>
